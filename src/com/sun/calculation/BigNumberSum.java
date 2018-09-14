@@ -9,6 +9,7 @@ import java.util.Stack;
 public class BigNumberSum {
 
 	public static String sum(String a,String b) {
+		
 		Stack<Integer> aStack = getIntStack(a);
 		Stack<Integer> bStack = getIntStack(b);
 		Stack<String> sumStack = new Stack<>();

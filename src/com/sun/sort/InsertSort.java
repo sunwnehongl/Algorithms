@@ -1,7 +1,7 @@
 package com.sun.sort;
 
 /***
- * ²åÈëÅÅĞòµÄÊµÏÖ
+ * æ’å…¥æ’åºçš„å®ç°
  * @author swh
  *
  */
@@ -10,7 +10,7 @@ public class InsertSort {
 public static void sort(int [] array) {
 		
 	for(int i =1;i<array.length;i++) {
-		    // °ÑµÚi¸öÊıÕÒµ½j-1µ½0µÄÎ»ÖÃ
+		    // æŠŠç¬¬iä¸ªæ•°æ‰¾åˆ°j-1åˆ°0çš„ä½ç½®
 			for(int j=i;j>0&&array[j]<array[j-1];j--) {
 				int temp = array[j-1];
 				array[j-1] = array[j];

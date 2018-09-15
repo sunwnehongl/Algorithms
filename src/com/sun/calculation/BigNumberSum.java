@@ -2,7 +2,7 @@ package com.sun.calculation;
 
 import java.util.Stack;
 /***
- * ÇóÁ½¸ö³¬´óÊýµÄºÏ
+ * ä¸¤ä¸ªè¶…å¤§æ•°æ±‚å’Œ
  * @author swh
  *
  */

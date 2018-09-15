@@ -1,7 +1,7 @@
 package com.sun.sort;
 
 /***
- * ÊµÏÖÑ¡ÔñÅÅĞò
+ * å®ç°é€‰æ‹©æ’åº
  * @author swh
  *
  */

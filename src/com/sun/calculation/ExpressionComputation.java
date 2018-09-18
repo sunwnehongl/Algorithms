@@ -105,6 +105,13 @@ public class ExpressionComputation {
 	        return result;
 	}
 	
+	/***
+	 * 得到二元运算的值
+	 * @param operation
+	 * @param b
+	 * @param a
+	 * @return
+	 */
 	public static int getOptionValue(String operation,int b,int a) {
 		 int result = 0;
 	        switch (operation){

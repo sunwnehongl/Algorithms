@@ -50,6 +50,11 @@ public class FindMedianSortedArrays {
 
     }
 
+    /**
+     * 得到一个数组的中位数
+     * @param nums 所求数组
+     * @return 中位数
+     */
     private double getMedian(int[] nums) {
         int length = nums.length;
         if (length % 2 == 0) {
@@ -59,6 +64,12 @@ public class FindMedianSortedArrays {
         }
     }
 
+    /**
+     * 对两个有序数组合并后排序
+     * @param nums1 数组一
+     * @param nums2 有序数组二
+     * @return 合并后得有序数组
+     */
     private int[] sortArrays(int[] nums1, int[] nums2){
         int n = nums1.length;
         int m = nums2.length;

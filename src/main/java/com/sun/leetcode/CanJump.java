@@ -35,19 +35,27 @@ public class CanJump {
             return true;
         }
 
+        int[] mark = new int[nums.length];
 
-        return canJump(nums, 0);
+        return canJump(nums, 0,mark);
     }
 
-    public boolean canJump(int[] nums, int start) {
+    public boolean canJump(int[] nums, int start,int[] mark) {
         if (nums[start] >= nums.length - 1 - start) {
             return true;
         }
+        if (mark[start] ==1) {
+            return false;
+        }
         for (int i = nums[start]; i >= 1; i--) {
-            if (canJump(nums,start+i)) {
+            if (canJump(nums,start+i,mark)) {
                 return true;
+            }else{
+                mark[start+i] =1;
             }
         }
         return false;
     }
+
+
 }

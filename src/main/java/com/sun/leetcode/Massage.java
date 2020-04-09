@@ -31,4 +31,8 @@ public class Massage {
 
         return dp[nums.length-1];
     }
+
+    static void f1(char c) {
+
+    }
 }

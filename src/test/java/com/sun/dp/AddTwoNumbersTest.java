@@ -33,7 +33,7 @@ public class AddTwoNumbersTest {
                 {getListNode("111"), getListNode("111"), getListNode("222")},
                 {getListNode("0"), getListNode("0"), getListNode("0")},
                 {getListNode("1"), getListNode("0"), getListNode("1")},
-                {getListNode("9999"), getListNode("1"), getListNode("1")}
+                {getListNode("9999"), getListNode("1"), getListNode("00001")}
           });
     }
 

@@ -1,4 +1,4 @@
-package com.sun.sort;
+package com.sun.leetcode;
 
 import java.util.Stack;
 

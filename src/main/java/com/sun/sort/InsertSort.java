@@ -23,7 +23,7 @@ public static void sort(int [] array) {
 		int [] array = {1,9,15,3,10,54,36,18,2};
 		sort(array);
 		for(int a:array) {
-			System.out.println(a);
+			System.out.print(a +" ");
 		}
 	}
 }

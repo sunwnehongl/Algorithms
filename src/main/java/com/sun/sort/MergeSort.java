@@ -12,7 +12,6 @@ public class MergeSort {
     }
 
     private static void sort(int[] data, int start, int end) {
-
         if (start < end) {
             int dividing = (start +end)/2;
             sort(data, start, dividing);

@@ -115,15 +115,16 @@ public class TreeErgodic {
             return;
         }
         Stack<Node> stack = new Stack<>();
-        Node node = head;
-        while (!stack.isEmpty() || node != null) {
-            if (node != null) {
-                stack.push(node);
-                node = head.left;
-            } else {
-                node = stack.pop();
-                System.out.println(node.value);
-                head = node.right;
+        stack.push(head);
+        Node node;
+        while (!stack.isEmpty() ) {
+            node = stack.pop();
+            System.out.println(node.value);
+            if (node.right != null) {
+                stack.push(node.right);
+            }
+            if (node.left != null) {
+                stack.push(node.left);
             }
         }
     }

@@ -1,5 +1,7 @@
 package com.sun.binarytree;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -90,7 +92,6 @@ public class TreeErgodic {
             return;
         }
         Stack<Node> stack = new Stack<>();
-        stack.push(head);
         Node node = head;
         while (!stack.isEmpty() || node != null) {
             if (node != null) {
@@ -100,6 +101,53 @@ public class TreeErgodic {
                 node = stack.pop();
                 System.out.println(node.value);
                 node = node.right;
+            }
+        }
+    }
+
+    /**
+     * 深度优先遍历
+     *
+     * @param head 树的头节点
+     */
+    private void dfs(Node head) {
+        if (head == null) {
+            return;
+        }
+        Stack<Node> stack = new Stack<>();
+        Node node = head;
+        while (!stack.isEmpty() || node != null) {
+            if (node != null) {
+                stack.push(node);
+                node = head.left;
+            } else {
+                node = stack.pop();
+                System.out.println(node.value);
+                head = node.right;
+            }
+        }
+    }
+
+    /**
+     * 宽度优先遍历
+     *
+     * @param head 树的头节点
+     */
+    private void bfs(Node head) {
+        if (head == null) {
+            return;
+        }
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(head);
+        Node node;
+        while (!queue.isEmpty()) {
+            node = queue.poll();
+            System.out.println(node.value);
+            if (node.left != null) {
+                queue.add(node.left);
+            }
+            if (node.right != null) {
+                queue.add(node.right);
             }
         }
     }

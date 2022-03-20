@@ -1,6 +1,5 @@
 package com.sun.binarytree;
 
-import javax.swing.tree.TreeNode;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;

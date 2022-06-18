@@ -1,5 +1,7 @@
 package com.sun.leetcode;
 
+import java.util.Scanner;
+
 /**
  * 给定两个整数，被除数 dividend 和除数 divisor。将两数相除，要求不使用乘法、除法和 mod 运算符。
  *
@@ -11,6 +13,9 @@ package com.sun.leetcode;
  */
 public class Divide {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        System.out.println(a);
         Divide divide = new Divide();
         System.out.println(11 >> 3);
         System.out.printf(divide.divide(1,1)+"");
